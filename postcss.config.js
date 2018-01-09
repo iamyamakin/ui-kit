@@ -1,8 +1,7 @@
 const path = require('path');
 const webpackPostcssTools = require('webpack-postcss-tools');
-const PATHS = require('./configs/paths');
 
-const cssMap = webpackPostcssTools.makeVarMap(path.join(PATHS.src, 'variables/index.css'));
+const cssMap = webpackPostcssTools.makeVarMap('./src/variables/index.css');
 
 module.exports = {
     plugins: {

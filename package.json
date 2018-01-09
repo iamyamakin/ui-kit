@@ -9,9 +9,10 @@
     "clean": "rimraf ./dist",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:css": "./node_modules/.bin/stylelint --color ./src/**/*.css",
-    "lint:css:fix": "./node_modules/.bin/stylelint --color ./src/**/*.css",
+    "lint:css:fix": "./node_modules/.bin/stylelint --fix ./src/**/*.css",
     "lint:js": "./node_modules/.bin/eslint .",
-    "lint:js:fix": "./node_modules/.bin/eslint --fix ."
+    "lint:js:fix": "./node_modules/.bin/eslint --fix .",
+    "storybook": "NODE_ENV=development start-storybook -p 9001"
   },
   "author": "iamyamakin",
   "license": "MIT",
@@ -23,6 +24,11 @@
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.3.6",
+    "@storybook/addon-knobs": "^3.3.6",
+    "@storybook/addon-notes": "^3.3.6",
+    "@storybook/addon-options": "^3.3.6",
+    "@storybook/react": "^3.3.4",
     "autoprefixer": "^7.2.4",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -32,6 +38,7 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.12",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
     "css-loader": "^0.28.7",
     "eslint": "^4.14.0",
     "eslint-plugin-import": "^2.8.0",

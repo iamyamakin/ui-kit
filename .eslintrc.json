@@ -28,6 +28,7 @@
         "react"
     ],
     "rules": {
+        "import/no-unresolved": ["error", {"ignore": ["^@storybook"]}],
         "import/order": 1,
         "import/exports-last": 1,
         "react/display-name": 0,

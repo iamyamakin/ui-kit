@@ -1,0 +1,12 @@
+.viewport {
+    background: var(--color-white);
+
+    &__title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &__content {
+    }
+}
+
