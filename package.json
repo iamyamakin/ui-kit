@@ -12,6 +12,7 @@
     "lint:css:fix": "./node_modules/.bin/stylelint --fix ./src/**/*.css",
     "lint:js": "./node_modules/.bin/eslint .",
     "lint:js:fix": "./node_modules/.bin/eslint --fix .",
+    "precommit": "lint-staged",
     "storybook": "NODE_ENV=development start-storybook -p 9001"
   },
   "author": "iamyamakin",
@@ -44,6 +45,8 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-react": "^7.5.1",
     "extract-text-webpack-plugin": "^3.0.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
     "postcss-custom-properties": "^6.2.0",
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.9",
